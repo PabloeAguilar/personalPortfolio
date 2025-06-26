@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of a full-stack developer with experience in Vue.js, Java, and database systems">
+    <title>Pabloe Aguilar | Full-Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="header-content">
+        <h1>Pabloe Aguilar</h1>
+        <p>Full-Stack Developer</p>
+    </div>
+    <nav role="navigation" aria-label="Main navigation">
+        <button class="menu-toggle" aria-label="Menu" aria-expanded="false">
+            <span class="hamburger"></span>
+        </button>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="about" aria-labelledby="about-heading">
+        <h2 id="about-heading">About Me</h2>
+        <article>
+            <p>I'm a full-stack developer with a passion for building practical applications. My journey in programming started with Java, and I've since expanded my skills to include web development with Vue.js and database management.</p>
+            <p>I'm particularly interested in creating solutions that solve real-world problems, like my laundry management system project. I enjoy both frontend design and backend logic, and I'm constantly learning new technologies to become a well-rounded developer.</p>
+        </article>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">My Projects</h2>
+
+        <!-- Filter Buttons -->
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="desktop">Desktop</button>
+            <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+        </div>
+
+        <!-- Projects Container -->
+        <div class="projects-container">
+            <!-- Your existing projects (add data-category attributes) -->
+            <article class="project" data-category="fullstack desktop">
+                <h3>Laundry Management System</h3>
+                <figure>
+                    <img src="images/laundry-system.jpg" alt="Laundry system interface"
+                         class="lightbox-trigger" data-lightbox="laundry-system">
+                    <figcaption>Local system for laundry management</figcaption>
+                </figure>
+                <p>This desktop application was built with Vue.js, Electron, and SQLite to help manage laundry operations for small businesses. Features include:</p>
+                <ul>
+                    <li>Customer management</li>
+                    <li>Order tracking</li>
+                    <li>Reporting system</li>
+                </ul>
+                <!-- ... rest of project content ... -->
+            </article>
+
+            <!-- Add more projects with appropriate categories -->
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-image">
+        <div class="lightbox-caption"></div>
+    </div>
+
+    <section id="skills" aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Skills</h2>
+        <div class="skills-container">
+            <article>
+                <h3>Frontend</h3>
+                <ul>
+                    <li>HTML5 & CSS3</li>
+                    <li>JavaScript</li>
+                    <li>Vue.js</li>
+                    <li>Responsive Design</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Backend</h3>
+                <ul>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>PHP</li>
+                    <li>C#</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Tools & Databases</h3>
+                <ul>
+                    <li>SQLite</li>
+                    <li>Git</li>
+                    <li>Electron</li>
+                    <li>VS Code</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Get In Touch</h2>
+        <form id="contact-form" aria-labelledby="contact-heading">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required aria-required="true">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required aria-required="true">
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+</main>
+
+<footer role="contentinfo">
+    <p>&copy; 2023 Pabloe Aguilar. All rights reserved.</p>
+    <ul class="social-links">
+        <li><a href="https://github.com/yourusername" aria-label="GitHub profile">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/yourusername" aria-label="LinkedIn profile">LinkedIn</a></li>
+        <li><a href="mailto:your.email@example.com" aria-label="Send email">Email</a></li>
+    </ul>
+</footer>
+<script src="scripts.js"></script>
+</body>
+</html>
+
