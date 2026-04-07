@@ -119,6 +119,45 @@ nav ul {
     margin: 0;
 }
 
+#lang-toggle {
+    position: fixed;
+    right: 1.25rem;
+    bottom: 1.25rem;
+    width: 3.25rem;
+    height: 3.25rem;
+    border: none;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #42a5f5, #1e88e5);
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    cursor: pointer;
+    z-index: 2100;
+    box-shadow: 0 10px 24px rgba(30, 136, 229, 0.35);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+#lang-toggle:hover {
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 14px 28px rgba(30, 136, 229, 0.45);
+    filter: brightness(1.05);
+}
+
+#lang-toggle:focus-visible {
+    outline: 3px solid rgba(255, 255, 255, 0.9);
+    outline-offset: 2px;
+}
+
+@media (max-width: 768px) {
+    #lang-toggle {
+        right: 1rem;
+        bottom: 1rem;
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
 /* Hero section adjustment */
 .hero {
     margin-top: 0; /* Remove the previous margin-top */
