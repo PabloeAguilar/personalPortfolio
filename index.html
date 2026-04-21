@@ -57,7 +57,7 @@
                 <button class="filter-btn active" data-filter="all" data-i18n="filter.all">All</button>
                 <button class="filter-btn" data-filter="web" data-i18n="filter.web">Web</button>
                 <button class="filter-btn" data-filter="desktop" data-i18n="filter.desktop">Desktop</button>
-                <button class="filter-btn" data-filter="fullstack" data-i18n="filter.fullstack">Full Stack</button>
+                <!-- <button class="filter-btn" data-filter="fullstack" data-i18n="filter.fullstack">Full Stack</button> -->
             </div>
 
             <!-- Projects Container -->
@@ -89,7 +89,7 @@
                         <li data-i18n="laundry.feat2">Customer management</li>
                         <li data-i18n="laundry.feat3">Ticket printing</li>
                     </ul>
-                    <a href="https://lavanderivue-web-demo.vercel.app/" data-i18n="laundry.demo">Link to demo</a>
+                    <a target="_blank" href="https://lavanderivue-demo.pabloeaguilar.com" data-i18n="laundry.demo">Link to demo</a>
 
                 </article>
 
@@ -129,7 +129,7 @@
                             content and client-side for some interactivity</li>
 
                     </ul>
-                    <a href="https://basic-customizable-portfolio-demo.vercel.app/" data-i18n="portfolio.demo">Link to demo</a>
+                    <a target="_blank" href="https://portafolio-artista.pabloeaguilar.com" data-i18n="portfolio.demo">Link to demo</a>
 
                 </article>
 
@@ -164,15 +164,15 @@
                         <li>Java</li>
                         <li>C#</li>
                         <li>Python</li>
-                        <li>PHP</li>
                     </ul>
                 </article>
                 <article>
                     <h3 data-i18n="skills.tools">Tools & Databases</h3>
                     <ul>
-                        <li>SQLite</li>
+                        <li data-i18n="skills.serverConf">Linux Server Configuration</li>
+                        <li data-i18n="skills.relationalDB">Relational databases (MySQL, SQL Server, PostgreSQL)</li>
                         <li>Git</li>
-                        <li>Electron</li>
+                        <li>Docker</li>
                         <li data-i18n-html="skills.strapi">Headless CMS with <a href="https://strapi.io/" target="_blank"
                                 rel="noopener noreferrer">Strapi</a></li>
                     </ul>
@@ -195,7 +195,8 @@
                     <label for="message" data-i18n="contact.message_label">Message:</label>
                     <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
                 </div>
-                <button type="submit" class="btn" data-i18n="contact.send">Send Message</button>
+                <p data-i18n="contact.note">* This form is currently non-functional. Please reach out via social media right under this.</p>
+                <!-- <button type="submit" class="btn" data-i18n="contact.send">Send Message</button> -->
             </form>
         </section>
     </main>

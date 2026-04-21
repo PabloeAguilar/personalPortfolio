@@ -36,6 +36,8 @@ const translations = {
         'skills.backend': 'Backend',
         'skills.tools': 'Tools & Databases',
         'skills.responsive': 'Responsive Design',
+        'skills.serverConf': 'Linux Server Configuration',
+        'skills.relationalDB': 'Relational databases (MySQL, SQL Server, PostgreSQL)',
         'skills.strapi': 'Headless CMS with <a href="https://strapi.io/" target="_blank" rel="noopener noreferrer">Strapi</a>',
         'contact.title': 'Get In Touch',
         'contact.name_label': 'Name:',
@@ -79,7 +81,9 @@ const translations = {
         'skills.backend': 'Backend',
         'skills.tools': 'Herramientas & Bases de datos',
         'skills.responsive': 'Diseño Responsivo',
-        'skills.strapi': 'CMS sin cabeza con <a href="https://strapi.io/" target="_blank" rel="noopener noreferrer">Strapi</a>',
+        'skills.serverConf': 'Configuración de Servidores Linux',
+        'skills.relationalDB': 'Bases de datos relacionales (MySQL, SQL Server, PostgreSQL)',
+        'skills.strapi': 'CMS headless con <a href="https://strapi.io/" target="_blank" rel="noopener noreferrer">Strapi</a>',
         'contact.title': 'Contáctame',
         'contact.name_label': 'Nombre:',
         'contact.email_label': 'Correo:',
@@ -124,19 +128,19 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const menuToggle = document.querySelector('.menu-toggle');
     const navMenu = document.querySelector('nav ul');
 
     if (menuToggle) {
-        menuToggle.addEventListener('click', function() {
+        menuToggle.addEventListener('click', function () {
             navMenu.classList.toggle('show');
         });
     }
 });
 
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Project Filtering
     const filterButtons = document.querySelectorAll('.filter-btn');
     const projects = document.querySelectorAll('.project');
